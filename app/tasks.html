@@ -533,230 +533,109 @@
     <div class="container-fluid">
         <div class="row">
 
-            <div class="tasks-item">
+            <div class="heading heading--lvl2 heading--tasks-footer">
+                <a href="" class="user-counter">
+                    <span class="user-counter__item user-counter__text">Задачи процесса</span>
+                    <div class="user-counter__val-holder">
+                        <div class="user-counter__item user-counter__val user-counter__val--active">
+                            <span>6</span>
+                        </div>
+                        <div class="user-counter__item user-counter__val user-counter__val--overdue">
+                            <span>6</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
-                <div class="heading heading--lvl2 heading--tasks-footer">
-                    <a href="" class="user-counter">
-                        <span class="user-counter__item user-counter__text">Задачи процесса</span>
-                        <div class="user-counter__val-holder">
-                            <div class="user-counter__item user-counter__val user-counter__val--active">
-                                <span>6</span>
+
+            <div class="tasks-table">
+
+                <ul class="tasks-table-header">
+                    <li class="tasks-table-header__col1">Задача</li>
+                    <li class="tasks-table-header__col2">Тема</li>
+                    <li class="tasks-table-header__col3">Тип</li>
+                    <li class="tasks-table-header__col4">Инициатор</li>
+                    <li class="tasks-table-header__col5">Исполнитель</li>
+                    <li class="tasks-table-header__col6">Дата создания</li>
+                    <li class="tasks-table-header__col7 tasks-table-header__toggler">Плановый срок</li>
+                    <li class="tasks-table-header__col8 tasks-table-header__toggler">Фактический срок</li>
+                    <li>Комментарий</li>
+                </ul>
+
+                <ul class="tasks-table-filters">
+                   <li class="tasks-table-filters__col1">
+                       <select class="form-field form-field--select">
+                           <option value="">05684895</option>
+                           <option value="05684896">05684896</option>
+                           <option value="05684897">05684897</option>
+                           <option value="05684898">05684898</option>
+                       </select>
+                   </li>
+                    <li class="tasks-table-filters__col2">
+                        <select class="form-field form-field--select">
+                            <option value="">Тип</option>
+                            <option value="Тип-1">Тип-1</option>
+                            <option value="Тип-2">Тип-2</option>
+                            <option value="Тип-3">Тип-3</option>
+                        </select>
+                    </li>
+                </ul>
+
+
+                <ul class="tasks-table-body">
+
+                    <li class="tasks-table-body__item">
+                        <div class="tasks-table-body__item-inner">
+                            <div class="tasks-table-body__col tasks-table-body__col-1 tasks-table-body__task">
+                                <span>052658</span>
                             </div>
-                            <div class="user-counter__item user-counter__val user-counter__val--overdue">
-                                <span>6</span>
+                            <div class="tasks-table-body__col tasks-table-body__col-2 tasks-table-body__object">
+                                <span>Встреча с клиентом. Длинная тема в несколько строк дляпонимания и проверки интерлиньяжа</span>
+                            </div>
+                            <div class="tasks-table-body__col tasks-table-body__col-3 tasks-table-body__type">
+                                <span>Встреча с клиентом</span>
+                            </div>
+                            <div class="tasks-table-body__col tasks-table-body__col-4 tasks-table-body__initiator">
+                                <span>Константинопольський К.К</span>
+                            </div>
+                            <div class="tasks-table-body__col tasks-table-body__col-5 tasks-table-body__executor">
+                                <span>Константинопольський К.К</span>
+                            </div>
+                            <div class="tasks-table-body__col tasks-table-body__col-6 tasks-table-body__date-of-creation">
+                                <span>11 сентября 2018</span>
+                                <span>15:00</span>
+                            </div>
+                            <div class="tasks-table-body__col tasks-table-body__col-7 tasks-table-body__target-period">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM11.5 9.5V10.5H10.5H3.5V9.5H10.5V4.5H11.5V9.5Z" fill="#AB2328"/>
+                                </svg>
+                                <span>11 сентября 2018</span>
+                                <span>15:00</span>
+                            </div>
+                            <div class="tasks-table-body__col tasks-table-body__col-8 tasks-table-body__actual-period">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 2H8V1H1V0H0V1V9V20H1V9H7V10H20L18 6L20 2Z" fill="#4F4F4F"/>
+                                </svg>
+                                <span>11 сентября 2018</span>
+                                <span>15:00</span>
+                            </div>
+                            <div class="tasks-table-body__col tasks-table-body__col-9 tasks-table-body__comment">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.95115 20C9.89015 20 9.57415 18.027 9.57415 18.027C9.57415 18.027 11.5812 12.585 13.5012 11.134C13.9122 10.71 14.1702 10.24 14.3322 9.85602C14.3692 9.76202 14.4022 9.67202 14.4321 9.59002C14.5611 9.33302 14.8351 8.93702 15.4212 8.58902L13.5012 0.38202C13.5012 0.38202 10.5302 0.00201953 7.55015 0.0630195C6.35815 -0.0309805 5.09415 -0.0389808 4.08915 0.173019C0.673152 0.888019 1.52915 3.22902 1.52915 3.22902C-0.311849 4.59002 0.735151 6.28902 0.735151 6.28902C-0.901849 7.96802 0.706151 9.37802 0.706151 9.37802C0.706151 9.37802 -0.178849 10.734 0.964151 11.76C2.38915 13.043 6.25815 12.189 6.25815 12.189C6.52815 12.144 6.81515 12.086 7.12215 12.013C7.12215 12.013 8.46015 11.4 7.12215 15.392C5.78015 19.383 8.01115 20 8.95115 20ZM17.2201 8.47502C16.8172 8.47502 16.4181 8.15602 16.3351 7.76802L14.8812 0.97402C14.7972 0.58602 15.0592 0.26702 15.4662 0.27102H20.0002L19.9961 8.47502H17.2201Z" transform="translate(20 20) rotate(180)" fill="#27AE60"/>
+                                </svg>
+                                <span>11 сентября 2018</span>
+                                <span>15:00</span>
                             </div>
                         </div>
-                    </a>
-                </div>
+                    </li>
 
-                <table class="table tasks-table">
-                    <thead>
-                        <tr class="tasks-table-header">
-                            <th class="tasks-table__col-1">Задача</th>
-                            <th class="tasks-table__col-2">Тема</th>
-                            <th class="tasks-table__col-3 tasks-table__type tasks-table__type--heading">Тип</th>
-                            <th class="tasks-table__col-4 tasks-table__initiator tasks-table__initiator--heading">Инициатор</th>
-                            <th class="tasks-table__col-5">Исполнитель</th>
-                            <th class="tasks-table__col-6 tasks-table__time-creation">Дата создания</th>
-                            <th class="tasks-table__col-7">
-                                <button class="tasks-table__toggler">Плановый срок</button>
-                            </th>
-                            <th class="tasks-table__col-8">
-                                <button class="tasks-table__toggler">Фактический срок</button>
-                            </th>
-                            <th class="tasks-table__col-9">Комментарий</th>
-                        </tr>
-                    </thead>
 
-                    <tbody class="tasks-table-body">
-                        <tr class="tasks-table-selects">
-                            <td>
-                                <select class="form-field form-field--select">
-                                    <option value="">052658</option>
-                                    <option value="052658">052658</option>
-                                    <option value="052659">052659</option>
-                                    <option value="052610">052610</option>
-                                    <option value="052611">052611</option>
-                                    <option value="052612">052612</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select class="form-field form-field--select">
-                                    <option value="">К кому обращение</option>
-                                    <option value="052658">К кому обращение-1</option>
-                                    <option value="052659">К кому обращение-2</option>
-                                    <option value="052610">К кому обращение-3</option>
-                                </select>
-                            </td>
-                            <td>
-                                <select class="form-field form-field--select">
-                                    <option value="">Встреча с клиентом</option>
-                                    <option value="Встреча с клиентом-1">Ежегодно оплачиваемый отпуск</option>
-                                    <option value="Встреча с клиентом-2">Встреча с клиентом-2</option>
-                                    <option value="Встреча с клиентом-3">Встреча с клиентом-3</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button class="table-slide-toggle">+</button>
-                                <span>052658</span>
-                            </td>
-                            <td>Встреча с клиентом. Длинная тема в несколько строк для понимания и проверки интерлиньяжа</td>
-                            <td class="tasks-table__type tasks-table__type--body">Встреча с клиентом</td>
-                            <td class="tasks-table__line-through tasks-table__initiator tasks-table__initiator--body">Константинопольський К.К.</td>
-                            <td class="tasks-table__line-through">
-                                <span>Константинопольський К.К.</span>
-                                <span>Иванов И.И.</span>
-                            </td>
-                            <td class="tasks-table__time-creation tasks-table__time-creation--body">11 сентября 2018 15:00</td>
-                            <td>
-                                <div class="table__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM11.5 9.5V10.5H10.5H3.5V9.5H10.5V4.5H11.5V9.5Z" fill="#AB2328"/>
-                                    </svg>
-                                    <span>11 сентября 2018 15:00</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20 2H8V1H1V0H0V1V9V20H1V9H7V10H20L18 6L20 2Z" fill="#4F4F4F"/>
-                                    </svg>
-                                    <span>11 сентября 2018 15:00</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.95115 20C9.89015 20 9.57415 18.027 9.57415 18.027C9.57415 18.027 11.5812 12.585 13.5012 11.134C13.9122 10.71 14.1702 10.24 14.3322 9.85602C14.3692 9.76202 14.4022 9.67202 14.4321 9.59002C14.5611 9.33302 14.8351 8.93702 15.4212 8.58902L13.5012 0.38202C13.5012 0.38202 10.5302 0.00201953 7.55015 0.0630195C6.35815 -0.0309805 5.09415 -0.0389808 4.08915 0.173019C0.673152 0.888019 1.52915 3.22902 1.52915 3.22902C-0.311849 4.59002 0.735151 6.28902 0.735151 6.28902C-0.901849 7.96802 0.706151 9.37802 0.706151 9.37802C0.706151 9.37802 -0.178849 10.734 0.964151 11.76C2.38915 13.043 6.25815 12.189 6.25815 12.189C6.52815 12.144 6.81515 12.086 7.12215 12.013C7.12215 12.013 8.46015 11.4 7.12215 15.392C5.78015 19.383 8.01115 20 8.95115 20ZM17.2201 8.47502C16.8172 8.47502 16.4181 8.15602 16.3351 7.76802L14.8812 0.97402C14.7972 0.58602 15.0592 0.26702 15.4662 0.27102H20.0002L19.9961 8.47502H17.2201Z" transform="translate(20 20) rotate(180)" fill="#27AE60"/>
-                                    </svg>
-                                    <span>11 сентября 2018 15:00</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="slide">
-                            <td></td>
-                            <td>gh</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button class="table-slide-toggle">+</button>
-                                <span>052658</span>
-                            </td>
-                            <td>Встреча с клиентом. Длинная тема в несколько строк для понимания и проверки интерлиньяжа</td>
-                            <td class="tasks-table__type tasks-table__type--body">Встреча с клиентом</td>
-                            <td class="tasks-table__line-through tasks-table__initiator tasks-table__initiator--body">Константинопольський К.К.</td>
-                            <td class="tasks-table__line-through">
-                                <span>Константинопольський К.К.</span>
-                                <span>Иванов И.И.</span>
-                            </td>
-                            <td class="tasks-table__time-creation tasks-table__time-creation--body">11 сентября 2018 15:00</td>
-                            <td>
-                                <div class="table__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM11.5 9.5V10.5H10.5H3.5V9.5H10.5V4.5H11.5V9.5Z" fill="#AB2328"/>
-                                    </svg>
-                                    <span>11 сентября 2018 15:00</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20 2H8V1H1V0H0V1V9V20H1V9H7V10H20L18 6L20 2Z" fill="#4F4F4F"/>
-                                    </svg>
-                                    <span>11 сентября 2018 15:00</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.95115 20C9.89015 20 9.57415 18.027 9.57415 18.027C9.57415 18.027 11.5812 12.585 13.5012 11.134C13.9122 10.71 14.1702 10.24 14.3322 9.85602C14.3692 9.76202 14.4022 9.67202 14.4321 9.59002C14.5611 9.33302 14.8351 8.93702 15.4212 8.58902L13.5012 0.38202C13.5012 0.38202 10.5302 0.00201953 7.55015 0.0630195C6.35815 -0.0309805 5.09415 -0.0389808 4.08915 0.173019C0.673152 0.888019 1.52915 3.22902 1.52915 3.22902C-0.311849 4.59002 0.735151 6.28902 0.735151 6.28902C-0.901849 7.96802 0.706151 9.37802 0.706151 9.37802C0.706151 9.37802 -0.178849 10.734 0.964151 11.76C2.38915 13.043 6.25815 12.189 6.25815 12.189C6.52815 12.144 6.81515 12.086 7.12215 12.013C7.12215 12.013 8.46015 11.4 7.12215 15.392C5.78015 19.383 8.01115 20 8.95115 20ZM17.2201 8.47502C16.8172 8.47502 16.4181 8.15602 16.3351 7.76802L14.8812 0.97402C14.7972 0.58602 15.0592 0.26702 15.4662 0.27102H20.0002L19.9961 8.47502H17.2201Z" transform="translate(20 20) rotate(180)" fill="#27AE60"/>
-                                    </svg>
-                                    <span>11 сентября 2018 15:00</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button class="table-slide-toggle">+</button>
-                                <span>052658</span>
-                            </td>
-                            <td>Встреча с клиентом. Длинная тема в несколько строк для понимания и проверки интерлиньяжа</td>
-                            <td class="tasks-table__type tasks-table__type--body">Встреча с клиентом</td>
-                            <td class="tasks-table__line-through tasks-table__initiator tasks-table__initiator--body">Константинопольський К.К.</td>
-                            <td class="tasks-table__line-through">
-                                <span>Константинопольський К.К.</span>
-                                <span>Иванов И.И.</span>
-                            </td>
-                            <td class="tasks-table__time-creation tasks-table__time-creation--body">11 сентября 2018 15:00</td>
-                            <td>
-                                <div class="table__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM11.5 9.5V10.5H10.5H3.5V9.5H10.5V4.5H11.5V9.5Z" fill="#AB2328"/>
-                                    </svg>
-                                    <span>11 сентября 2018 15:00</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20 2H8V1H1V0H0V1V9V20H1V9H7V10H20L18 6L20 2Z" fill="#4F4F4F"/>
-                                    </svg>
-                                    <span>11 сентября 2018 15:00</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.95115 20C9.89015 20 9.57415 18.027 9.57415 18.027C9.57415 18.027 11.5812 12.585 13.5012 11.134C13.9122 10.71 14.1702 10.24 14.3322 9.85602C14.3692 9.76202 14.4022 9.67202 14.4321 9.59002C14.5611 9.33302 14.8351 8.93702 15.4212 8.58902L13.5012 0.38202C13.5012 0.38202 10.5302 0.00201953 7.55015 0.0630195C6.35815 -0.0309805 5.09415 -0.0389808 4.08915 0.173019C0.673152 0.888019 1.52915 3.22902 1.52915 3.22902C-0.311849 4.59002 0.735151 6.28902 0.735151 6.28902C-0.901849 7.96802 0.706151 9.37802 0.706151 9.37802C0.706151 9.37802 -0.178849 10.734 0.964151 11.76C2.38915 13.043 6.25815 12.189 6.25815 12.189C6.52815 12.144 6.81515 12.086 7.12215 12.013C7.12215 12.013 8.46015 11.4 7.12215 15.392C5.78015 19.383 8.01115 20 8.95115 20ZM17.2201 8.47502C16.8172 8.47502 16.4181 8.15602 16.3351 7.76802L14.8812 0.97402C14.7972 0.58602 15.0592 0.26702 15.4662 0.27102H20.0002L19.9961 8.47502H17.2201Z" transform="translate(20 20) rotate(180)" fill="#27AE60"/>
-                                    </svg>
-                                    <span>11 сентября 2018 15:00</span>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <button class="table-slide-toggle">+</button>
-                                <span>052658</span>
-                            </td>
-                            <td>Встреча с клиентом. Длинная тема в несколько строк для понимания и проверки интерлиньяжа</td>
-                            <td class="tasks-table__type tasks-table__type--body">Встреча с клиентом</td>
-                            <td class="tasks-table__line-through tasks-table__initiator tasks-table__initiator--body">Константинопольський К.К.</td>
-                            <td class="tasks-table__line-through">
-                                <span>Константинопольський К.К.</span>
-                                <span>Иванов И.И.</span>
-                            </td>
-                            <td class="tasks-table__time-creation tasks-table__time-creation--body">11 сентября 2018 15:00</td>
-                            <td>
-                                <div class="table__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM11.5 9.5V10.5H10.5H3.5V9.5H10.5V4.5H11.5V9.5Z" fill="#AB2328"/>
-                                    </svg>
-                                    <span>11 сентября 2018 15:00</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20 2H8V1H1V0H0V1V9V20H1V9H7V10H20L18 6L20 2Z" fill="#4F4F4F"/>
-                                    </svg>
-                                    <span>11 сентября 2018 15:00</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="table__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.95115 20C9.89015 20 9.57415 18.027 9.57415 18.027C9.57415 18.027 11.5812 12.585 13.5012 11.134C13.9122 10.71 14.1702 10.24 14.3322 9.85602C14.3692 9.76202 14.4022 9.67202 14.4321 9.59002C14.5611 9.33302 14.8351 8.93702 15.4212 8.58902L13.5012 0.38202C13.5012 0.38202 10.5302 0.00201953 7.55015 0.0630195C6.35815 -0.0309805 5.09415 -0.0389808 4.08915 0.173019C0.673152 0.888019 1.52915 3.22902 1.52915 3.22902C-0.311849 4.59002 0.735151 6.28902 0.735151 6.28902C-0.901849 7.96802 0.706151 9.37802 0.706151 9.37802C0.706151 9.37802 -0.178849 10.734 0.964151 11.76C2.38915 13.043 6.25815 12.189 6.25815 12.189C6.52815 12.144 6.81515 12.086 7.12215 12.013C7.12215 12.013 8.46015 11.4 7.12215 15.392C5.78015 19.383 8.01115 20 8.95115 20ZM17.2201 8.47502C16.8172 8.47502 16.4181 8.15602 16.3351 7.76802L14.8812 0.97402C14.7972 0.58602 15.0592 0.26702 15.4662 0.27102H20.0002L19.9961 8.47502H17.2201Z" transform="translate(20 20) rotate(180)" fill="#27AE60"/>
-                                    </svg>
-                                    <span>11 сентября 2018 15:00</span>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                </ul>
+
 
             </div>
+
+
 
         </div>
     </div>
