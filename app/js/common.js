@@ -36,7 +36,7 @@ $(function() {
     });
 
 
-    //selectize
+    //селекты
     customSelectize();
     function customSelectize() {
         var xhr;
@@ -66,8 +66,8 @@ $(function() {
     }
 
 
-//    slide toggle в таблице
-    $(".org-table .table-slide-toggle").on('click', function () {
+//    dropdown-ы в таблицах
+    $(".table-slide-toggle").on('click', function () {
 
         if( $(this).closest('li').find('ul').length )  {
 
@@ -85,14 +85,29 @@ $(function() {
     });
 
 
+    //toggler, расскрывающий селекты на странице задач  (ниже 992px)
+    $(".tasks-table-filter-toggler").on('click', function () {
+        if (! $(this).hasClass('is-active')) {
+            $(this).addClass('is-active').addBack().find('.tasks-table-filter-toggler__sign').html('−');
+            $(".tasks-table-filters").slideDown('fast');
+        }
+        else{
+            $(this).removeClass('is-active').addBack().find('.tasks-table-filter-toggler__sign').html('+')
+            $(".tasks-table-filters").slideUp('fast');
+        }
+    });
 
+
+
+
+    //оперирование трроугольником на старанице задач
     $(".tasks-table-header__toggler").on('click', function () {
        $(this).toggleClass('is-active');
     });
 
 
 
-//    tabs
+//    табы на странице "Кабинет руковдителя"
 
     $(".tabs__list li ").on('click', function () {
         $(this).removeClass().addClass('btn btn--dark').siblings().removeClass('btn--dark').addClass('btn--light');
@@ -102,6 +117,14 @@ $(function() {
         target.addClass('is-shown').siblings().removeClass('is-shown');
 
     });
+
+
+
+
+// resize textarea
+    autosize($('textarea'));
+
+
 
 
 });
