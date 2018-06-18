@@ -290,8 +290,12 @@
                     <form action="" class="comment-form">
                         <textarea name="" placeholder="Введите комментарий..." class="form-field"></textarea>
                         <div class="comment-form__btns">
-                            <button class="btn btn--submit">Согласовать</button>
-                            <input type="reset" value="отклонить" class="btn btn--dark">
+                            <div class="comment-form__btn-wrap">
+                                <button class="btn btn--submit">Согласовать</button>
+                            </div>
+                            <div class="comment-form__btn-wrap">
+                                <input type="reset" value="отклонить" class="btn btn--dark">
+                            </div>
                         </div>
                     </form>
                     <!--Конец Форма ввода комментариев-->
@@ -761,7 +765,7 @@
                                 <!--КОНЕЦ ТЕКСТА, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
 
                                 <!--КОНТЕНТ ЯЧЕЙКИ-->
-                                <span>052658</span>
+                                <a href="">052658</a>
                                 <!--КОНЕЦ КОНТЕНТ ЯЧЕЙКИ-->
 
 
@@ -951,7 +955,7 @@
                                 <!--КОНЕЦ ТЕКСТА, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
 
                                 <!--КОНТЕНТ ЯЧЕЙКИ-->
-                                <span>052658</span>
+                                <a href="">052658</a>
                                 <!--КОНЕЦ КОНТЕНТ ЯЧЕЙКИ-->
 
 
@@ -1140,197 +1144,7 @@
                                 <!--КОНЕЦ ТЕКСТА, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
 
                                 <!--КОНТЕНТ ЯЧЕЙКИ-->
-                                <span>052658</span>
-                                <!--КОНЕЦ КОНТЕНТ ЯЧЕЙКИ-->
-
-
-                            </div>
-                            <!--КОНЕЦ ПЕРВАЯ ЯЧЕЙКА АЙТЕМА-->
-
-                            <div class="tasks-table-body__col tasks-table-body__col-2 tasks-table-body__object">
-
-                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ (НАПРИМЕР, Задача, Тема, Тип и т.д).-->
-                                <span class="tasks-table-body__col-title tasks-table-body__col-title--object">Тема</span>
-                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ (НАПРИМЕР, Задача, Тема, Тип и т.д).-->
-
-                                <span>Встреча с клиентом. Длинная тема в несколько строк для понимания и проверки интерлиньяжа</span>
-
-                            </div>
-
-                            <!--ТРЕТЬЯ ЧЕЙЧКА АЙТЕМА-->
-                            <div class="tasks-table-body__col tasks-table-body__col-3 tasks-table-body__type">
-
-                                <!--СЕЛЕКТ ЯЧЕЙКИ. СКРЫВАЕТЬСЯ НИЖЕ 992px-->
-                                <select class="form-field form-field--select">
-                                    <option value="">Тип</option>
-                                    <option value="Тип-1">Тип-1</option>
-                                    <option value="Тип-2">Тип-2</option>
-                                    <option value="Тип-3">Тип-3</option>
-                                </select>
-                                <!-- КОНЕЦ СЕЛЕКТ ЯЧЕЙКИ. СКРЫВАЕТЬСЯ НИЖЕ 992px-->
-
-                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-                                <span class="tasks-table-body__col-title tasks-table-body__col-title--type">Тип</span>
-                                <!--КОНЕЦ ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-
-                                <!--КОНТЕНТ ЯЧЕЙКИ-->
-                                <span>Встреча с клиентом</span>
-                                <!--КОНЕЦ КОНТЕНТ ЯЧЕЙКИ-->
-
-                            </div>
-                            <!--КОНЕЦ  ТРЕТЬЕЙ ЧЕЙЧКА АЙТЕМА-->
-
-                            <!--ЧЕТВЕРТАЯ ЯЧЕЙКА АЙТЕМА-->
-                            <div class="tasks-table-body__col tasks-table-body__col-4 tasks-table-body__initiator">
-
-                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-                                <span class="tasks-table-body__col-title tasks-table-body__col-title--initiator">Инициатор</span>
-                                <!--конец ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-
-                                <span><a href="">Константинопольський К.К</a></span>
-
-                            </div>
-                            <!--КОНЕЦ ЧЕТВЕРТОЙ ЯЧЕЙКА АЙТЕМА-->
-
-                            <!--ПЯТАЯ ЯЧЕЙКА АЙТЕМА-->
-                            <div class="tasks-table-body__col tasks-table-body__col-5 tasks-table-body__executor">
-
-                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-                                <span class="tasks-table-body__col-title tasks-table-body__col-title--executor">Исполнитель</span>
-                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-
-                                <span><a href="">Константинопольський К.К</a></span>
-
-                            </div>
-                            <!--КОНЕЦ ПЯТАЯ ЯЧЕЙКА АЙТЕМА-->
-
-                            <!--ШЕСТАЯ ЯЧЕЙКА АЙТЕМА-->
-                            <div class="tasks-table-body__col tasks-table-body__col-6 tasks-table-body__date-of-creation">
-
-                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-                                <span class="tasks-table-body__col-title tasks-table-body__date-of-creation">Дата создания</span>
-                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-
-                                <span>11 сентября 2018, 15:00</span>
-
-                            </div>
-                            <!--КОНЕЦ ШЕСТОЙ ЯЧЕЙКА АЙТЕМА-->
-
-                            <!--СЕДЬМАЯ ЯЧЕЙКА АЙТЕМА-->
-                            <div class="tasks-table-body__col tasks-table-body__col-7 tasks-table-body__target-period">
-
-                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-                                <span class="tasks-table-body__col-title tasks-table-body__target-period">Плановый срок</span>
-                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-                                <div class="tasks-table-body__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM11.5 9.5V10.5H10.5H3.5V9.5H10.5V4.5H11.5V9.5Z" fill="#AB2328"/>
-                                    </svg>
-                                    <span>11 сентября 2018, 15:00</span>
-                                </div>
-
-                            </div>
-                            <!--КОНЕЦ СЕДЬМАЯ ЯЧЕЙКА АЙТЕМА-->
-
-                            <!--ВОСЬМАЯ ЯЧЕЙКА АЙТЕМА-->
-                            <div class="tasks-table-body__col tasks-table-body__col-8 tasks-table-body__actual-period">
-
-                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-                                <span class="tasks-table-body__col-title tasks-table-body__actual-period">Фактический срок</span>
-                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-
-                                <div class="tasks-table-body__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M20 2H8V1H1V0H0V1V9V20H1V9H7V10H20L18 6L20 2Z" fill="#4F4F4F"/>
-                                    </svg>
-                                    <span>11 сентября 2018, 15:00</span>
-                                </div>
-
-                            </div>
-                            <!--КОНЕЦ ВОСЬМОЙ ЯЧЕЙКИ АЙТЕМА-->
-
-                            <!--ДЕВЬТАЯ ЯЧЕЙКА АЙТЕМА-->
-                            <div class="tasks-table-body__col tasks-table-body__col-9 tasks-table-body__comment">
-
-                                <!--<!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-                                <span class="tasks-table-body__col-title tasks-table-body__comment">Комментарий</span>
-                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-
-                                <div class="tasks-table-body__icon-wrapper">
-                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.95115 20C9.89015 20 9.57415 18.027 9.57415 18.027C9.57415 18.027 11.5812 12.585 13.5012 11.134C13.9122 10.71 14.1702 10.24 14.3322 9.85602C14.3692 9.76202 14.4022 9.67202 14.4321 9.59002C14.5611 9.33302 14.8351 8.93702 15.4212 8.58902L13.5012 0.38202C13.5012 0.38202 10.5302 0.00201953 7.55015 0.0630195C6.35815 -0.0309805 5.09415 -0.0389808 4.08915 0.173019C0.673152 0.888019 1.52915 3.22902 1.52915 3.22902C-0.311849 4.59002 0.735151 6.28902 0.735151 6.28902C-0.901849 7.96802 0.706151 9.37802 0.706151 9.37802C0.706151 9.37802 -0.178849 10.734 0.964151 11.76C2.38915 13.043 6.25815 12.189 6.25815 12.189C6.52815 12.144 6.81515 12.086 7.12215 12.013C7.12215 12.013 8.46015 11.4 7.12215 15.392C5.78015 19.383 8.01115 20 8.95115 20ZM17.2201 8.47502C16.8172 8.47502 16.4181 8.15602 16.3351 7.76802L14.8812 0.97402C14.7972 0.58602 15.0592 0.26702 15.4662 0.27102H20.0002L19.9961 8.47502H17.2201Z" transform="translate(20 20) rotate(180)" fill="#27AE60"/>
-                                    </svg>
-                                    <span>11 сентября 2018, 15:00</span>
-                                </div>
-
-                            </div>
-                            <!--КОНЕЦ ДЕВЬТОЙ  ЯЧЕЙКИ АЙТЕМА-->
-
-                        </div>
-                        <!--КОНЕЦ ОБЕРТКИ КОНТЕНТА ITEM-A. НУЖНА ДЛЯ КОРРЕКТНОГО ОТОБРАЖЕНИЯ КОНТЕНТА-->
-
-                        <!--DROPDOWN АЙТЕМА. DROPDOWN ПОКАЗЫВАЕТЬСЯ МЕЖДУ 1200px И 992px. В DROPDOWN НУЖНО ПОМЕСТИТЬ ЧАСТЬ КОНТЕНТА ТАБЛИЦЫ, А ИМЕННО : ДАТУ СОЗДАНИЯ, ИНИЦИАТОРА И ТИП-->
-                        <ul class="tasks-table-body__drop-list">
-                            <li>
-                                <div>
-
-                                    <span class="tasks-table-body__drop-key">Дата создания</span>
-
-                                    <span class="tasks-table-body__drop-val">31 сентября 2018</span>
-
-                                </div>
-
-                                <div>
-
-                                    <span class="tasks-table-body__drop-key">Инициатор</span>
-
-                                    <span class="tasks-table-body__drop-val"><a href="">Константинопольський К.К</a></span>
-
-                                </div>
-
-                                <div>
-
-                                    <span class="tasks-table-body__drop-key">Тип</span>
-
-                                    <span class="tasks-table-body__drop-val">Встреча</span>
-
-                                </div>
-                            </li>
-                        </ul>
-                        <!--КОНЕЦ DROPDOWNA АЙТЕМА. DROPDOWN ПОКАЗЫВАЕТЬСЯ МЕЖДУ 1200px И 992px. В DROPDOWN НУЖНО ПОМЕСТИТЬ ЧАСТЬ КОНТЕНТА ТАБЛИЦЫ, А ИМЕННО : ДАТУ СОЗДАНИЯ, ИНИЦИАТОРА И ТИП-->
-
-                    </li>
-                    <!--КОНЕЦ iTEM ТАБЛИЦЫ ЗАДАЧ ПРОЦЕССА-->
-
-
-                    <!--iTEM ТАБЛИЦЫ ЗАДАЧ ПРОЦЕССА-->
-                    <li class="tasks-table-body__item">
-
-                        <!--ОБЕРТКА КОНТЕНТА ITEM-A. НУЖНА ДЛЯ КОРРЕКТНОГО ОТОБРАЖЕНИЯ КОНТЕНТА-->
-                        <div class="tasks-table-body__item-inner">
-
-                            <!--toggler item-a таблицы. При клике на него показываються дочерние елементы айтема таблицы-->
-                            <button class="table-slide-toggle">+</button>
-                            <!--конец togglerа item-a таблицы. При клике на него показываються дочерние елементы айтема таблицы-->
-
-                            <div class="tasks-table-body__col tasks-table-body__col-1 tasks-table-body__task">
-
-
-                                <!--СЕЛЕКТ ЯЧЕЙКИ. СКРЫВАЕТЬСЯ НИЖЕ 992px-->
-                                <select class="form-field form-field--select">
-                                    <option value="">05684895</option>
-                                    <option value="05684896">05684896</option>
-                                    <option value="05684897">05684897</option>
-                                    <option value="05684898">05684898</option>
-                                </select>
-                                <!--СЕЛЕКТ ЯЧЕЙКИ. СКРЫВАЕТЬСЯ НИЖЕ 992px-->
-
-                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-                                <span class="tasks-table-body__col-title tasks-table-body__col-title--task">Задача</span>
-                                <!--КОНЕЦ ТЕКСТА, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
-
-                                <!--КОНТЕНТ ЯЧЕЙКИ-->
-                                <span>052658</span>
+                                <a href="">052658</a>
                                 <!--КОНЕЦ КОНТЕНТ ЯЧЕЙКИ-->
 
 
@@ -1520,7 +1334,197 @@
                                 <!--КОНЕЦ ТЕКСТА, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
 
                                 <!--КОНТЕНТ ЯЧЕЙКИ-->
-                                <span>052658</span>
+                                <a href="">052658</a>
+                                <!--КОНЕЦ КОНТЕНТ ЯЧЕЙКИ-->
+
+
+                            </div>
+                            <!--КОНЕЦ ПЕРВАЯ ЯЧЕЙКА АЙТЕМА-->
+
+                            <div class="tasks-table-body__col tasks-table-body__col-2 tasks-table-body__object">
+
+                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ (НАПРИМЕР, Задача, Тема, Тип и т.д).-->
+                                <span class="tasks-table-body__col-title tasks-table-body__col-title--object">Тема</span>
+                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ (НАПРИМЕР, Задача, Тема, Тип и т.д).-->
+
+                                <span>Встреча с клиентом. Длинная тема в несколько строк для понимания и проверки интерлиньяжа</span>
+
+                            </div>
+
+                            <!--ТРЕТЬЯ ЧЕЙЧКА АЙТЕМА-->
+                            <div class="tasks-table-body__col tasks-table-body__col-3 tasks-table-body__type">
+
+                                <!--СЕЛЕКТ ЯЧЕЙКИ. СКРЫВАЕТЬСЯ НИЖЕ 992px-->
+                                <select class="form-field form-field--select">
+                                    <option value="">Тип</option>
+                                    <option value="Тип-1">Тип-1</option>
+                                    <option value="Тип-2">Тип-2</option>
+                                    <option value="Тип-3">Тип-3</option>
+                                </select>
+                                <!-- КОНЕЦ СЕЛЕКТ ЯЧЕЙКИ. СКРЫВАЕТЬСЯ НИЖЕ 992px-->
+
+                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+                                <span class="tasks-table-body__col-title tasks-table-body__col-title--type">Тип</span>
+                                <!--КОНЕЦ ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+
+                                <!--КОНТЕНТ ЯЧЕЙКИ-->
+                                <span>Встреча с клиентом</span>
+                                <!--КОНЕЦ КОНТЕНТ ЯЧЕЙКИ-->
+
+                            </div>
+                            <!--КОНЕЦ  ТРЕТЬЕЙ ЧЕЙЧКА АЙТЕМА-->
+
+                            <!--ЧЕТВЕРТАЯ ЯЧЕЙКА АЙТЕМА-->
+                            <div class="tasks-table-body__col tasks-table-body__col-4 tasks-table-body__initiator">
+
+                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+                                <span class="tasks-table-body__col-title tasks-table-body__col-title--initiator">Инициатор</span>
+                                <!--конец ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+
+                                <span><a href="">Константинопольський К.К</a></span>
+
+                            </div>
+                            <!--КОНЕЦ ЧЕТВЕРТОЙ ЯЧЕЙКА АЙТЕМА-->
+
+                            <!--ПЯТАЯ ЯЧЕЙКА АЙТЕМА-->
+                            <div class="tasks-table-body__col tasks-table-body__col-5 tasks-table-body__executor">
+
+                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+                                <span class="tasks-table-body__col-title tasks-table-body__col-title--executor">Исполнитель</span>
+                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+
+                                <span><a href="">Константинопольський К.К</a></span>
+
+                            </div>
+                            <!--КОНЕЦ ПЯТАЯ ЯЧЕЙКА АЙТЕМА-->
+
+                            <!--ШЕСТАЯ ЯЧЕЙКА АЙТЕМА-->
+                            <div class="tasks-table-body__col tasks-table-body__col-6 tasks-table-body__date-of-creation">
+
+                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+                                <span class="tasks-table-body__col-title tasks-table-body__date-of-creation">Дата создания</span>
+                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+
+                                <span>11 сентября 2018, 15:00</span>
+
+                            </div>
+                            <!--КОНЕЦ ШЕСТОЙ ЯЧЕЙКА АЙТЕМА-->
+
+                            <!--СЕДЬМАЯ ЯЧЕЙКА АЙТЕМА-->
+                            <div class="tasks-table-body__col tasks-table-body__col-7 tasks-table-body__target-period">
+
+                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+                                <span class="tasks-table-body__col-title tasks-table-body__target-period">Плановый срок</span>
+                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+                                <div class="tasks-table-body__icon-wrapper">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 0C4.5 0 0 4.5 0 10C0 15.5 4.5 20 10 20C15.5 20 20 15.5 20 10C20 4.5 15.5 0 10 0ZM11.5 9.5V10.5H10.5H3.5V9.5H10.5V4.5H11.5V9.5Z" fill="#AB2328"/>
+                                    </svg>
+                                    <span>11 сентября 2018, 15:00</span>
+                                </div>
+
+                            </div>
+                            <!--КОНЕЦ СЕДЬМАЯ ЯЧЕЙКА АЙТЕМА-->
+
+                            <!--ВОСЬМАЯ ЯЧЕЙКА АЙТЕМА-->
+                            <div class="tasks-table-body__col tasks-table-body__col-8 tasks-table-body__actual-period">
+
+                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+                                <span class="tasks-table-body__col-title tasks-table-body__actual-period">Фактический срок</span>
+                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+
+                                <div class="tasks-table-body__icon-wrapper">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 2H8V1H1V0H0V1V9V20H1V9H7V10H20L18 6L20 2Z" fill="#4F4F4F"/>
+                                    </svg>
+                                    <span>11 сентября 2018, 15:00</span>
+                                </div>
+
+                            </div>
+                            <!--КОНЕЦ ВОСЬМОЙ ЯЧЕЙКИ АЙТЕМА-->
+
+                            <!--ДЕВЬТАЯ ЯЧЕЙКА АЙТЕМА-->
+                            <div class="tasks-table-body__col tasks-table-body__col-9 tasks-table-body__comment">
+
+                                <!--<!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+                                <span class="tasks-table-body__col-title tasks-table-body__comment">Комментарий</span>
+                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+
+                                <div class="tasks-table-body__icon-wrapper">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.95115 20C9.89015 20 9.57415 18.027 9.57415 18.027C9.57415 18.027 11.5812 12.585 13.5012 11.134C13.9122 10.71 14.1702 10.24 14.3322 9.85602C14.3692 9.76202 14.4022 9.67202 14.4321 9.59002C14.5611 9.33302 14.8351 8.93702 15.4212 8.58902L13.5012 0.38202C13.5012 0.38202 10.5302 0.00201953 7.55015 0.0630195C6.35815 -0.0309805 5.09415 -0.0389808 4.08915 0.173019C0.673152 0.888019 1.52915 3.22902 1.52915 3.22902C-0.311849 4.59002 0.735151 6.28902 0.735151 6.28902C-0.901849 7.96802 0.706151 9.37802 0.706151 9.37802C0.706151 9.37802 -0.178849 10.734 0.964151 11.76C2.38915 13.043 6.25815 12.189 6.25815 12.189C6.52815 12.144 6.81515 12.086 7.12215 12.013C7.12215 12.013 8.46015 11.4 7.12215 15.392C5.78015 19.383 8.01115 20 8.95115 20ZM17.2201 8.47502C16.8172 8.47502 16.4181 8.15602 16.3351 7.76802L14.8812 0.97402C14.7972 0.58602 15.0592 0.26702 15.4662 0.27102H20.0002L19.9961 8.47502H17.2201Z" transform="translate(20 20) rotate(180)" fill="#27AE60"/>
+                                    </svg>
+                                    <span>11 сентября 2018, 15:00</span>
+                                </div>
+
+                            </div>
+                            <!--КОНЕЦ ДЕВЬТОЙ  ЯЧЕЙКИ АЙТЕМА-->
+
+                        </div>
+                        <!--КОНЕЦ ОБЕРТКИ КОНТЕНТА ITEM-A. НУЖНА ДЛЯ КОРРЕКТНОГО ОТОБРАЖЕНИЯ КОНТЕНТА-->
+
+                        <!--DROPDOWN АЙТЕМА. DROPDOWN ПОКАЗЫВАЕТЬСЯ МЕЖДУ 1200px И 992px. В DROPDOWN НУЖНО ПОМЕСТИТЬ ЧАСТЬ КОНТЕНТА ТАБЛИЦЫ, А ИМЕННО : ДАТУ СОЗДАНИЯ, ИНИЦИАТОРА И ТИП-->
+                        <ul class="tasks-table-body__drop-list">
+                            <li>
+                                <div>
+
+                                    <span class="tasks-table-body__drop-key">Дата создания</span>
+
+                                    <span class="tasks-table-body__drop-val">31 сентября 2018</span>
+
+                                </div>
+
+                                <div>
+
+                                    <span class="tasks-table-body__drop-key">Инициатор</span>
+
+                                    <span class="tasks-table-body__drop-val"><a href="">Константинопольський К.К</a></span>
+
+                                </div>
+
+                                <div>
+
+                                    <span class="tasks-table-body__drop-key">Тип</span>
+
+                                    <span class="tasks-table-body__drop-val">Встреча</span>
+
+                                </div>
+                            </li>
+                        </ul>
+                        <!--КОНЕЦ DROPDOWNA АЙТЕМА. DROPDOWN ПОКАЗЫВАЕТЬСЯ МЕЖДУ 1200px И 992px. В DROPDOWN НУЖНО ПОМЕСТИТЬ ЧАСТЬ КОНТЕНТА ТАБЛИЦЫ, А ИМЕННО : ДАТУ СОЗДАНИЯ, ИНИЦИАТОРА И ТИП-->
+
+                    </li>
+                    <!--КОНЕЦ iTEM ТАБЛИЦЫ ЗАДАЧ ПРОЦЕССА-->
+
+
+                    <!--iTEM ТАБЛИЦЫ ЗАДАЧ ПРОЦЕССА-->
+                    <li class="tasks-table-body__item">
+
+                        <!--ОБЕРТКА КОНТЕНТА ITEM-A. НУЖНА ДЛЯ КОРРЕКТНОГО ОТОБРАЖЕНИЯ КОНТЕНТА-->
+                        <div class="tasks-table-body__item-inner">
+
+                            <!--toggler item-a таблицы. При клике на него показываються дочерние елементы айтема таблицы-->
+                            <button class="table-slide-toggle">+</button>
+                            <!--конец togglerа item-a таблицы. При клике на него показываються дочерние елементы айтема таблицы-->
+
+                            <div class="tasks-table-body__col tasks-table-body__col-1 tasks-table-body__task">
+
+
+                                <!--СЕЛЕКТ ЯЧЕЙКИ. СКРЫВАЕТЬСЯ НИЖЕ 992px-->
+                                <select class="form-field form-field--select">
+                                    <option value="">05684895</option>
+                                    <option value="05684896">05684896</option>
+                                    <option value="05684897">05684897</option>
+                                    <option value="05684898">05684898</option>
+                                </select>
+                                <!--СЕЛЕКТ ЯЧЕЙКИ. СКРЫВАЕТЬСЯ НИЖЕ 992px-->
+
+                                <!--ТЕКСТ, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+                                <span class="tasks-table-body__col-title tasks-table-body__col-title--task">Задача</span>
+                                <!--КОНЕЦ ТЕКСТА, ОБОЗНАЧАЮЩИЙ К КАКОМУ ТИПУ ОТНОСИТЬСЯ КОНТЕНТ ЯЧЕЙКИ (НАПР, ЗАДАЧА, ТЕМА, ИСПОЛНИТЕЛЬ)-->
+
+                                <!--КОНТЕНТ ЯЧЕЙКИ-->
+                                <a href="">052658</a>
                                 <!--КОНЕЦ КОНТЕНТ ЯЧЕЙКИ-->
 
 
@@ -1697,9 +1701,11 @@
 
 
 
+
 <footer class="footer">
     <div class="container-fluid">
         <div class="row">
+            <span class="copyright">&copy; МСУ-1</span>
         </div>
     </div>
 </footer>
