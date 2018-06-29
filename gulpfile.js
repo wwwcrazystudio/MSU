@@ -41,6 +41,7 @@ gulp.task('js', function() {
 		'app/libs/slick-carousel/slick/slick.min.js',
 		'app/libs/selectize/dist/js/standalone/selectize.min.js',
 		'app/libs/autosize/dist/autosize.min.js',
+		'app/libs/magnific-popup/dist/jquery.magnific-popup.js',
 		'app/js/common.js' // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

@@ -29,12 +29,20 @@
 
     <div class="container-fluid">
 
+
+
+
+
         <div class="row">
+
 
             <div class="page-typography__area-holder">
 
 
-                <div class="col-4 offset-1 page-typography__area page-typography__area--desktop">
+                <div class="col-12 col-md-4 offset-md-1 page-typography__area page-typography__area--desktop">
+
+                    <a href="#popup" class="open-popup-link btn btn--dark">Открыть попап</a>
+
 
                     <div class="page-typography__partial page-typography__partial--typography">
 
@@ -402,7 +410,7 @@
             <div class="page-typography__area-holder">
 
 
-                <div class="col-5 offset-1 page-typography__area page-typography__area--tablet">
+                <div class="col-12 col-md-5 offset-md-1 page-typography__area page-typography__area--tablet">
 
                     <div class="page-typography__partial page-typography__partial--typography">
 
@@ -719,7 +727,7 @@
             <div class="page-typography__area-holder">
 
 
-                <div class="col-5 offset-1 page-typography__area page-typography__area--phone">
+                <div class="col-12 col-md-5 offset-md-1 page-typography__area page-typography__area--phone">
 
                     <div class="page-typography__partial page-typography__partial--typography">
 
@@ -907,6 +915,46 @@
         </div>
 
     </div>
+
+
+
+
+    <div class="popup mfp-hide" id="popup">
+
+        <div class="popup__title">Обратная связь</div>
+
+        <div class="popup-form">
+
+            <div class="form-field-select-wrapper popup__select-wrapper popup__item">
+
+                <select class="form-field form-field--select page-typography__form-field">
+                    <option value="">05684895</option>
+                    <option value="05684896">05684896</option>
+                    <option value="05684897">05684897</option>
+                    <option value="05684898">05684898</option>
+                </select>
+
+            </div>
+
+            <input type="text" class="form-field page-typography__form-field popup__item" placeholder="Тема">
+
+            <textarea name="" placeholder="Сообщение" class="form-field page-typography__form-field page-typography__form-field--textarea popup__item"></textarea>
+
+            <div class="popup__btns">
+
+                <button class="btn btn--submit page-typography__btn">Отправить</button>
+
+                <button class="btn btn--dark page-typography__btn page-typography__btn--dark page-typography__btn--lg">Отменить</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+
 
 
 <script src="js/scripts.min.js"></script>

@@ -3551,15 +3551,13 @@ textarea {
 	width: 100%;
 }
 
-.page-typography__block {
-	.form-field-select-wrapper .selectize-control .selectize-dropdown .option {
-		&.selected,
-		&.active,
-		&:hover{
-			background-color: #EBEBEB;
-		}
+.form-field-select-wrapper .selectize-control .selectize-dropdown .option {
+	&.active,
+	&:hover{
+		background-color: #EBEBEB;
 	}
 }
+
 
 .tasks-table-filters .selectize-control .selectize-dropdown .option {
 	&.selected,
@@ -3567,4 +3565,116 @@ textarea {
 	&:hover{
 		background-color: #EBEBEB;
 	}
+}
+
+.open-popup-link {
+	margin-bottom: 40px;
+}
+
+.popup {
+	position: relative;
+	background-color: #ffffff;
+	width: 100%;
+	max-width: 580px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 30px;
+	padding-bottom: 45px;
+	@include sm() {
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-top: 35px;
+	}
+	.mfp-close {
+		font-size: 40px;
+		color: #ffffff;
+		left: 100%;
+		opacity: 1;
+		font-family: $default-font;
+		line-height: 1;
+		margin-top: -14px;
+		margin-left: 10px;
+		@media (max-width: 768px) {
+			left: auto;
+			color: #000000;
+			margin-top: 0;
+			margin-left: 0;
+			right: 5px;
+		}
+	}
+	.form-field {
+		height: 34px;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 14px;
+		font-family: $default-font !important;
+	}
+	.page-typography__form-field--textarea {
+		height: 145px !important;
+	}
+}
+
+.popup__title {
+	color: #000000;
+	font-size: 16px;
+	letter-spacing: 0.16em;
+	font-family: $bold-font;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+
+.popup__select-wrapper {
+	.form-field {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.selectize-control {
+		padding-left: 0;
+		padding-right: 0;
+		& * {
+			font-family: $default-font !important;
+		}
+		.selectize-input{
+			line-height: 34px;
+			padding-left: 20px;
+		}
+		.selectize-dropdown {
+			height: auto;
+		}
+	 .selectize-dropdown .option {
+		 padding-left: 20px;
+	 }
+	}
+}
+
+.popup__item {
+	margin-bottom: 20px;
+}
+
+.popup__btns {
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 480px) {
+		flex-direction: column;
+	}
+	.btn {
+		min-width: 164px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-size: 12px;
+		font-family: $bold-font;
+		@media (max-width: 480px) {
+			width: 100%;
+			margin-bottom: 20px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.mfp-bg {
+	background: #000000;
 }
